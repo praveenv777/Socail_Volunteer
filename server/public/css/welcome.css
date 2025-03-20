@@ -1,0 +1,26 @@
+*,*::before,*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    overflow-y: hidden;
+    font-family: sans-serif;
+    text-align: center;
+}
+.about-wrapper{
+    height: fit-content;
+    width: fit-content;
+    margin-top: 2rem;
+    padding:1rem;
+}
+.about-wrapper h1{
+    font-size: 2.5rem;
+    margin:1rem auto;
+    color:#2a2ac0;
+}
+.about-wrapper p{
+    font-size: 1.4rem;
+    text-align: center;
+}

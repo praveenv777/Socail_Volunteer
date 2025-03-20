@@ -1,0 +1,139 @@
+@use '../../utils/variables';
+
+.synopsis{
+        width:95%;
+        min-height:15rem;
+        padding:1rem;
+        margin:1rem auto;
+        box-shadow: 0 0 3px variables.$shadow;
+        border-radius: 1rem;
+        // background: variables.$body-bg;
+        
+        header{
+            height:4rem;
+            margin:0.5rem auto;
+            width:calc(100% - 1rem);
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            // background: variables.$body-bg;
+
+            h1{
+                margin:1rem 2rem;
+                font-size: 1.65rem;
+                color:variables.$sooth-black;
+
+                // user level
+                span{
+                    color:variables.$sooth-black;
+                    margin: 0 1rem;
+                    padding:0.5rem;
+                    font-size: 1rem;
+                    border-radius: 0.65rem;
+                }
+                .bronze{
+                    background: variables.$bronze;
+                    color:#ffffff;
+                }
+
+                .gold{
+                    background: variables.$gold;
+                    color:variables.$sooth-black;
+                }
+
+                .platinum{
+                    background:variables.$platinum;
+                    color:variables.$sooth-black;
+                }
+            }
+
+            .usage-period{
+                width:fit-content;
+                margin:1rem;
+                
+                p{
+                    font-size: 1.2rem;
+                    padding:0.8rem;
+                }
+            }   
+        }
+
+        .welcome{
+            height:3rem;
+            width:100%;
+            padding:0.5rem;
+            p{
+                font-size: 1.2rem;
+                margin:0 2rem;
+                color:variables.$sooth-black;
+            }
+        }
+
+        .user-data-container{
+            min-height:8rem;
+            width:100%;
+            margin:1rem auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap:1.5rem;
+
+            .data-box{
+                height:8rem;
+                width: 15rem;
+                display: grid;
+                place-content: center;
+                gap:0.5rem;
+                text-align: center;
+                background:variables.$gradient-pinkish;
+                color:variables.$sooth-black;
+                box-shadow: 0 0 8px variables.$fallback;
+                border-radius: 0.85rem;
+
+                h1{
+                    font-size: 1.1rem;
+                    
+                    border-radius: 0.6rem;
+                }
+                p{
+                    font-size:1.25rem;
+                }
+            }
+
+        }
+    @media screen and (max-width:750px){
+        .user-data-container{
+            // background: yellow;
+
+            .data-box{
+                width: 8rem;
+
+                h1{
+                    font-size: 1.19rem;
+                }
+                p{
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:512px){
+        .user-data-container{
+            // background: orange;
+
+            .data-box{
+                height: 7rem;
+                width: 6rem;
+
+                h1{
+                    font-size: 1rem;
+                }
+                p{
+                    font-size: 1.08rem;
+                }
+            }
+        }
+    }
+}

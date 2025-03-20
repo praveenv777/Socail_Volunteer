@@ -1,0 +1,118 @@
+@use '../../utils/variables';
+
+.feed-card-wrapper {
+    min-height: fit-content;
+    width: 33rem;
+    padding: 0.8rem;
+    background: white;
+    box-shadow: 0 0 5px variables.$fallback;
+    border-radius: 1rem;
+    user-select: none;
+
+    .feed-header {
+        // background:magenta;
+        margin: 0.5rem auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+
+        .feed-meta {
+            padding-left: 0.8rem;
+
+            #name {
+                font-weight: 600;
+                font-size: 1.3rem;
+            }
+        }
+
+        img {
+            border-radius: 50%;
+            height: 4.2rem;
+            width: 4.2rem;
+            box-shadow: 0 0 0 2px #fff, 0 0 0 4px #276ecc;
+        }
+
+        i {
+            position: absolute;
+            top: 0.8rem;
+            right: 1rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .feed-three-dots{
+            position: absolute;
+            right:-4rem;
+            top:0.7rem;
+            background-color: white;
+            padding:0.6rem 1rem;
+            box-shadow: 0 0 5px grey;
+            border-radius: 0.5rem;
+
+            li{
+                cursor: pointer;
+                list-style: none;
+                font-size: 0.9rem;
+                margin-bottom: 0.4rem;
+
+                &:hover{
+                    color:variables.$blue-accent;
+                }
+            }
+        }
+    }
+
+    .feed-body {
+        padding: 0.5rem;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            margin: 0.8rem auto;
+        }
+    }
+
+    .feed-footer {
+        height: 3rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .feed-icons {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 5rem;
+            height: 100%;
+            background: transparent;
+            border: none;
+            border-radius: 1rem;
+            cursor: pointer;
+            &:hover{
+                background: variables.$light-grey;
+            }
+            p {
+                font-size: 1.4rem;
+            }
+
+            i{
+                font-size: 1.5rem;
+                margin-top: 0.25rem;
+            }
+
+            #feed-icon-heart{
+                color:variables.$love;
+            }
+            #feed-icon-bookmark{
+                color:variables.$blue-accent;
+            }
+            #feed-icon-share{
+                color:variables.$positive;
+            }
+        }
+
+
+    }
+}

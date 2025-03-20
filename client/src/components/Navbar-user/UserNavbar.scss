@@ -1,0 +1,79 @@
+@use '../../utils/variables';
+
+.user-navbar{
+    background: #ffffff !important;
+    box-shadow: none !important;
+    height: 7rem;
+    position:relative;
+    .logo{  
+        height: 2rem;
+        margin-right: 2rem;
+     }
+    div{
+        display:flex;
+        width:100%;
+        height:100%;
+    }
+
+    &>div>ul{
+        width:60%;
+        height:100%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        // background:variables.$blue-accent;
+
+        li {
+            font-size: 1.25rem;
+            margin:0 1rem;
+            color:variables.$sooth-black;
+            cursor:pointer;
+
+            &:hover{
+                border-bottom: 1px solid variables.$shadow;
+                color:variables.$shadow;
+            }
+            &:visited{
+                font-style: oblique;
+            }
+        }
+        #logo{
+            font-size: 2rem;
+            color:variables.$blue-light;
+            &:hover{
+                border-bottom:none;
+            }
+        }
+    }
+    .right-icons{
+        height:100%;
+        width:5rem;
+        position:absolute;
+        right:1rem;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap:1.6rem;
+        margin-right: 1rem;
+    
+        i{
+            font-size:1.8rem;
+            color:#000;
+            cursor: pointer;
+            position: relative;
+        }
+        #notif-count{
+            height: 1.4rem;
+            width: 1.4rem;
+            text-align: center;
+            position: absolute;
+            font-size: 0.8rem;
+            color:#fff;
+            background: red;
+            border-radius: 50%;
+            right:-0.7rem;
+            padding-top: 0.1rem;
+        }
+    }
+}
