@@ -154,6 +154,4 @@ A real-time stream of updates, posts, and interactions from other users and even
 
 A profile page displaying personal information, public details, and statistics of user activities.
 </div>
-
-Author : Suman Roy
 Built with ❤️
